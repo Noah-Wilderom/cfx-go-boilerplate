@@ -1,0 +1,17 @@
+version: 0.1.0
+
+build:
+  mode: production
+  cache: false
+  bin_dir: build/bin
+  dependency_dir: build/dependencies
+  fxmanifest: ./build/fxmanifest.lua
+  server:
+    context: src/server
+    loader: build/dependencies/server/loader.ts
+    # ts_files: 
+    #   - src/server/index.ts
+  client:
+    context: ./src/client
+    ts_files: 
+      - src/client/index.ts
