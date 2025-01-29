@@ -1,9 +1,9 @@
 services:
   build-go:
     build:
-      context: ../../
-      dockerfile: ./build/dependencies/Dockerfile
+      context: ../..
+      dockerfile: build/dependencies/Dockerfile
     volumes:
       - type: bind
-        source: .
-        target: /build
+        source: ../bin
+        target: /build/bin
