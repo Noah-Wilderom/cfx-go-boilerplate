@@ -4,7 +4,7 @@ services:
   build-go:
     build:
       context: ../../
-      dockerfile: Dockerfile
+      dockerfile: ./build/dependencies/Dockerfile
     volumes:
       - type: bind
         source: .
